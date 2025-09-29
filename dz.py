@@ -191,31 +191,32 @@ except FileNotFoundError:
     pass
 
 # Основной цикл программы
-while True:
-    print("\nМеню:")
-    print("1. Добавить товар")
-    print("2. Просмотреть все товары")
-    print("3. Просмотреть товары по дате")
-    print("4. Просмотреть товары по категории")
-    print("5. Сортировка товаров по цене")
-    print("6. Удалить товар")
-    print("7. Выход")
-
-    choice = input("Выберите действие (1/2/3/4/5/6/7): ")
-
-    if choice == "1":
-        add_product()
-    elif choice == "2":
-        view_all_products()
-    elif choice == "3":
-        view_products_by_date()
-    elif choice == "4":
-        view_products_by_category()
-    elif choice == "5":
-        sort_products_by_price()
-    elif choice == "6":
-        delete_product()
-    elif choice == "7":
-        break
-    else:
-        print("Неверный выбор. Попробуйте снова.")
+if __name__ == "__main__":
+    while True:
+        print("\nМеню:")
+        print("1. Добавить товар")
+        print("2. Просмотреть все товары")
+        print("3. Просмотреть товары по дате")
+        print("4. Просмотреть товары по категории")
+        print("5. Сортировка товаров по цене")
+        print("6. Удалить товар")
+        print("7. Выход")
+    
+        choice = input("Выберите действие (1/2/3/4/5/6/7): ")
+    
+        if choice == "1":
+            add_product()
+        elif choice == "2":
+            view_all_products()
+        elif choice == "3":
+            view_products_by_date()
+        elif choice == "4":
+            view_products_by_category()
+        elif choice == "5":
+            sort_products_by_price()
+        elif choice == "6":
+            delete_product()
+        elif choice == "7":
+            break
+        else:
+            print("Неверный выбор. Попробуйте снова.")
