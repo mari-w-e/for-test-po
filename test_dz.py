@@ -1,6 +1,4 @@
 import pytest
-from sympy import python
-
 import dz
 
 
@@ -95,3 +93,4 @@ def test_delete_product(monkeypatch, capsys):
     assert dz.products == []
     captured = capsys.readouterr()
     assert "Товар успешно удален." in captured.out
+
